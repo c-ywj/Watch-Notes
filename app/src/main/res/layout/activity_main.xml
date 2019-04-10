@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/brandLabel"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="40dp"
+        android:text="Brand"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/modelLabel"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="26dp"
+        android:text="Model"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/brandLabel" />
+
+    <EditText
+        android:id="@+id/brandTextBox"
+        android:layout_width="220dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="Enter Brand"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brandLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/modelTextBox"
+        android:layout_width="220dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="Enter Model"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/modelLabel"
+        app:layout_constraintTop_toBottomOf="@+id/brandTextBox" />
+
+    <EditText
+        android:id="@+id/refTextBox"
+        android:layout_width="220dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="Enter Reference Number"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/refLabel"
+        app:layout_constraintTop_toBottomOf="@+id/modelTextBox" />
+
+    <EditText
+        android:id="@+id/movementTextBox"
+        android:layout_width="220dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="Enter Movement"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/movementLabel"
+        app:layout_constraintTop_toBottomOf="@+id/refTextBox" />
+
+    <EditText
+        android:id="@+id/complicationsTextBox"
+        android:layout_width="220dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="List Complications"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/complicationsLabel"
+        app:layout_constraintTop_toBottomOf="@+id/movementTextBox" />
+
+    <EditText
+        android:id="@+id/materialTextBox"
+        android:layout_width="220dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="Enter Case Material(s)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/materialLabel"
+        app:layout_constraintTop_toBottomOf="@+id/complicationsTextBox" />
+
+    <EditText
+        android:id="@+id/diameterTextBox"
+        android:layout_width="220dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:ems="10"
+        android:hint="Enter Case Diameter (mm)"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/diameterLabel"
+        app:layout_constraintTop_toBottomOf="@+id/materialTextBox" />
+
+    <TextView
+        android:id="@+id/refLabel"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="27dp"
+        android:text="Ref."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modelLabel" />
+
+    <TextView
+        android:id="@+id/movementLabel"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="26dp"
+        android:text="Movement"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refLabel" />
+
+    <TextView
+        android:id="@+id/complicationsLabel"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="25dp"
+        android:text="Complications"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movementLabel" />
+
+    <TextView
+        android:id="@+id/materialLabel"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="27dp"
+        android:text="Material"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/complicationsLabel" />
+
+    <TextView
+        android:id="@+id/diameterLabel"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="25dp"
+        android:text="Diameter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialLabel" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="70dp"
+        android:onClick="onClickSave"
+        android:text="Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/libraryBtn"
+        app:layout_constraintTop_toBottomOf="@+id/diameterTextBox" />
+
+    <Button
+        android:id="@+id/clearBtn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="70dp"
+        android:onClick="clearFields"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/libraryBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/diameterTextBox" />
+
+    <Button
+        android:id="@+id/libraryBtn"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginBottom="70dp"
+        android:text="Library"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/addBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/clearBtn"
+        app:layout_constraintTop_toBottomOf="@+id/diameterTextBox" />
+
+</android.support.constraint.ConstraintLayout>
